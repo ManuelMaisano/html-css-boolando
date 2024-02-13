@@ -1,22 +1,4 @@
-/* reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-ul {
-    list-style: none;
-}
-:root {
-	--color-b-nav: #ff6900;
-	--color-badge-green: #008000;
-	--color-badge-red: #ff0000;
-	--color-footer-black: #1a1a1a;
-	--color-b-main: #ffffff;
-}
-body{
-        font-family: 'Noto Sans', sans-serif;
-}
+
 /* reset */
 * {
     margin: 0;
@@ -29,11 +11,52 @@ ul {
 
 
 /* general */
+:root {
+	--color-b-nav: #ff6900;
+	--color-badge-green: #008000;
+	--color-badge-red: #ff0000;
+	--color-footer-black: #1a1a1a;
+	--color-b-main: #ffffff;
+}
 .debug{
     border:2px solid red;
     height: 50%;
     width: 50%;
 }
+/* header */
+header {
+    background-color: #FF6900;
+    white-space: 100%;
+    margin-bottom: 30px;
+
+}
+
+
+header>div {
+    align-items: center;
+    display: flex;
+}
+
+.logo {
+    width: 20%;
+    margin: auto;
+    padding: 2%;
+
+}
+
+
+.text-head {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.awe-head {
+    color: white;
+    padding: 9%;
+}
+
+/* main */
 body{
     font-family: "Arial", sans-serif;
 }
@@ -46,6 +69,12 @@ body{
     flex-wrap: wrap;
     gap: 10px;
 }
+.small-container {
+    max-width: 900px;
+    margin: auto;
+
+}
+
 .card{
     
     width: calc(100% / 3 - 10px);
@@ -119,4 +148,34 @@ img{
 .text3{
     text-decoration:line-through;
     color: var(--color-footer-black);
+}
+/* footer */
+footer{
+    background-color: var(--color-footer-black);
+    color: var(--color-b-main);
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+footer div.d-flex.j-bet {
+    margin: 10px;
+}
+.foot-d {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* utility flex */
+.d-flex{
+    display: flex;
+}
+.flex-center{
+    align-items: center;
+    align-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.f-around{
+    justify-content: space-around;
 }
