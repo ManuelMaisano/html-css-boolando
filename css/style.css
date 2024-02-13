@@ -1,0 +1,122 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+:root {
+	--color-b-nav: #ff6900;
+	--color-badge-green: #008000;
+	--color-badge-red: #ff0000;
+	--color-footer-black: #1a1a1a;
+	--color-b-main: #ffffff;
+}
+body{
+        font-family: 'Noto Sans', sans-serif;
+}
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+
+
+/* general */
+.debug{
+    border:2px solid red;
+    height: 50%;
+    width: 50%;
+}
+body{
+    font-family: "Arial", sans-serif;
+}
+.container{
+    max-width:1200px;
+    margin:20px auto;
+    color: var(--color-b-main);
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    
+    width: calc(100% / 3 - 10px);
+    cursor:pointer;
+}
+.card-image{
+    position: relative;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.badge{
+    background-color: var(--color-badge-red);
+    color: var(--color-b-main);
+    padding: 3px;
+    text-align:right;
+    position:absolute;
+    left: 0px;
+    bottom: 30px;
+    font-size: small;
+}
+.badge-green{
+    background-color: var(--color-badge-green);
+    color: var(--color-b-main);
+    padding: 3px;
+    text-align:right;
+    position:absolute;
+    left: 40px;
+    bottom: 30px;
+    font-size: small;
+    
+}
+.badge-green2{
+    background-color: var(--color-badge-green);
+    color: var(--color-b-main);
+    padding: 3px;
+    text-align:right;
+    position:absolute;
+    left: 0px;
+    bottom: 30px;
+    font-size: small;
+    
+}
+
+.hearth{
+    background-color: var(--color-b-main);
+    padding: 10px;
+    color: black;
+    text-align:center;
+    position:absolute;
+    top: 7px;
+    right: 0;
+}
+.secondary-image{
+    display: none;
+}
+.card:hover .main-image{
+    display:none;
+}
+.card:hover .secondary-image{
+    display:block;
+}
+.text{
+    color: var(--color-footer-black);
+}
+.text2{
+    color: var(--color-badge-red);
+    font-size: small;
+}
+.text3{
+    text-decoration:line-through;
+    color: var(--color-footer-black);
+}
