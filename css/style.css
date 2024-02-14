@@ -1,5 +1,6 @@
 
 /* reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ ul {
 
 
 /* general */
+
 :root {
 	--color-b-nav: #ff6900;
 	--color-badge-green: #008000;
@@ -28,6 +30,10 @@ header {
     background-color: #FF6900;
     white-space: 100%;
     margin-bottom: 30px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
 
 }
 
@@ -50,6 +56,9 @@ header>div {
     color: white;
     padding: 5px;
 }
+.l-center {
+    justify-content: center;
+}
 
 .awe-head {
     color: white;
@@ -57,12 +66,13 @@ header>div {
 }
 
 /* main */
+
 body{
     font-family: "Arial", sans-serif;
 }
 .container{
     max-width:1200px;
-    margin:20px auto;
+    margin:100px auto;
     color: var(--color-b-main);
     padding: 20px 30px;
     display: flex;
@@ -71,9 +81,10 @@ body{
 }
 .small-container {
     max-width: 900px;
-    margin: auto;
+    margin: 0 auto;
 
 }
+/* main */
 
 .card{
     
@@ -166,6 +177,7 @@ footer div.d-flex.j-bet {
 }
 
 /* utility flex */
+
 .d-flex{
     display: flex;
 }
