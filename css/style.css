@@ -37,6 +37,9 @@ header {
     z-index: 300000;
 
 }
+nav:hover{
+    text-decoration: underline;
+}
 
 
 header>div {
