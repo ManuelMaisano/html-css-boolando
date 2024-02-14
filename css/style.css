@@ -39,6 +39,7 @@ header {
 }
 nav:hover{
     text-decoration: underline;
+    color: var(--color-b-main);
 }
 
 
